@@ -1,0 +1,19 @@
+plugins {
+    id "groovy"
+    id "application"
+}
+
+repositories{
+    jcenter()
+}
+
+def l4jVersion = "1.5.4"
+dependencies {
+    compile "org.codehaus.groovy:groovy-all:2.4.12:indy"
+    compile "com.networknt:config:$l4jVersion"
+    compile "com.networknt:server:$l4jVersion"
+    compile "com.networknt:config:$l4jVersion"
+    testCompile "org.spockframework:spock-core:1.1-groovy-2.4"
+}
+
+mainClassName = "com.networknt.server.Server"
