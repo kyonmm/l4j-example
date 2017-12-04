@@ -1,0 +1,29 @@
+= Light 4 J with GroovyLang
+:toc:
+:numbered:
+
+== debug
+
+run this command, then access http://localhost:8081/baz
+
+----
+./gradlew run
+----
+
+shutdown Ctrl+C
+
+
+== run fatJar
+
+run this command, then access http://localhost:8081/baz
+
+----
+./gradlew build
+unzip build/distributions/l4j-example-shadow.zip
+./build/distributions/l4j-example-shadow/bin/l4j-example
+----
+
+shutdown Ctrl+C
+
+== reference
+https://github.com/networknt/light-example-4j/tree/master/rest/swagger/database/query/src/main/resources/config
